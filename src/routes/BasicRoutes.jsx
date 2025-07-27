@@ -29,12 +29,13 @@ import ManageTopProjects from '../pages/adminSide/topProjects/ManageTopProjects'
 import UpdateTopProjectForm from '../pages/adminSide/topProjects/UpdateTopProjectForm';
 import AdminRegisterForm from '../pages/clientSide/register/AdminRegisterForm';
 import ServiceProjectDetails from '../pages/clientSide/servicesPage/serviceRelatedProjectDetailsPage/ServiceProjectDetails';
-import SkillProjectDetails from '../pages/clientSide/skillRelatedPages/skillProjectDetailsPage/skillProjectDetails';
+
 import ProjectDetails from '../pages/adminSide/projects/ProjectDetails';
 import CheckoutPage from '../pages/clientSide/checkout/CheckoutPage';
 import Success from '../pages/clientSide/checkout/messages/Success';
 import Cancel from '../pages/clientSide/checkout/messages/Cancel';
 import Fail from '../pages/clientSide/checkout/messages/Fail';
+import SkillProjectDetails2 from '../pages/clientSide/skillRelatedPages/skillProjectDetailsPage/SkillProjectDetails2';
 
 const router = createBrowserRouter([
   {
@@ -80,7 +81,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/skillProjectDetails/:id",
-        element: <SkillProjectDetails></SkillProjectDetails>
+        element: <SkillProjectDetails2></SkillProjectDetails2>
       },
       // StackOverflow related pages 
       {
