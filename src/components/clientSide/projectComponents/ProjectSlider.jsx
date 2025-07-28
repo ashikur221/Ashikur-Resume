@@ -80,7 +80,7 @@ const ProjectSlider = () => {
       return res.data;
     }
   })
-  console.log(services);
+  console.log('all services',services);
 
   return (
     <div className="py-10 px-4  mx-auto">

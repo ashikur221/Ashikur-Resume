@@ -73,7 +73,7 @@ const BasicMagnetCard = ({ project }) => {
       {/* Project Info */}
       <h3 className="text-lg font-semibold mb-1 text-gray-900 dark:text-white">{project?.title}</h3>
       <p className="text-sm opacity-80 mb-4 text-gray-600 dark:text-white/80">
-        {project?.description?.slice(0, 100)}...
+       
       </p>
 
       {/* Tags */}
@@ -90,7 +90,7 @@ const BasicMagnetCard = ({ project }) => {
       </div>
 
       {/* CTA Buttons */}
-      <div className="flex gap-3">
+      {/* <div className="flex gap-3">
         <Link
           to={project?.live_link}
           target="_blank"
@@ -105,7 +105,7 @@ const BasicMagnetCard = ({ project }) => {
         >
           Code
         </a>
-      </div>
+      </div> */}
 
       {/* Glow effect */}
       <motion.div

@@ -23,10 +23,11 @@ const ProjectGrid = ({ service }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {
           serviceProjects?.length > 0 ?
-            (serviceProjects?.map(project =>
+            ([...serviceProjects]?.reverse()?.map(project =>
               <Link
-                target='_blank'
-              to={project?.live_link}> <BasicMagnetCard key={project._id} project={project} /></Link>))
+                key={project._id}
+                
+                to={`/serviceProjectDetails/${project?._id}`}> <BasicMagnetCard key={project._id} project={project} /></Link>))
             :
             <p className="text-center text-2xl font-bold text-red-600">No Project Found</p>
         }
