@@ -137,7 +137,41 @@ const ProjectForm = ({ refetch, services }) => {
                 placeholder="Enter live link"
                 value={liveLink}
                 onChange={(e) => setLiveLink(e.target.value)}
-                required
+
+              />
+            </div>
+
+
+            {/* Medium  link  */}
+            <div className="mb-6">
+              <label htmlFor="medium-link" className="block text-sm font-medium text-gray-700">
+                Medium Blog Link
+              </label>
+              <input
+                type="text"
+                id="medium-link"
+                className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder="Enter ERD link"
+                value={erdLink}
+                onChange={(e) => setErdLink(e.target.value)}
+
+              />
+            </div>
+
+
+            {/* Github link  */}
+            <div className="mb-6">
+              <label htmlFor="erd-link" className="block text-sm font-medium text-gray-700">
+                Github Link
+              </label>
+              <input
+                type="text"
+                id="github-link"
+                className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder="Enter Github link"
+                value={githubLink}
+                onChange={(e) => setGithubLink(e.target.value)}
+
               />
             </div>
 
@@ -153,25 +187,11 @@ const ProjectForm = ({ refetch, services }) => {
                 placeholder="Enter ERD link"
                 value={erdLink}
                 onChange={(e) => setErdLink(e.target.value)}
-                required
+
               />
             </div>
 
-            {/* Github link  */}
-            <div className="mb-6">
-              <label htmlFor="erd-link" className="block text-sm font-medium text-gray-700">
-                Github Link
-              </label>
-              <input
-                type="text"
-                id="github-link"
-                className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder="Enter Github link"
-                value={githubLink}
-                onChange={(e) => setGithubLink(e.target.value)}
-                required
-              />
-            </div>
+
 
 
             {/* Project Documentation link  */}
@@ -186,7 +206,7 @@ const ProjectForm = ({ refetch, services }) => {
                 placeholder="Enter Project Documentation link"
                 value={projectDocLink}
                 onChange={(e) => setProjectDocLink(e.target.value)}
-                required
+
               />
             </div>
 
@@ -203,7 +223,7 @@ const ProjectForm = ({ refetch, services }) => {
                 placeholder="Enter API Documentation link"
                 value={apiDocLink}
                 onChange={(e) => setApiDocLink(e.target.value)}
-                required
+
               />
             </div>
 
@@ -220,7 +240,7 @@ const ProjectForm = ({ refetch, services }) => {
                 placeholder="Enter Optional Live link"
                 value={optionalLiveLink}
                 onChange={(e) => setOptionalLiveLink(e.target.value)}
-                required
+
               />
             </div>
 
