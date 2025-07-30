@@ -13,21 +13,24 @@ const AdminLoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle login logic here
-    
-    loginUser(email, password)
-      .then(res => {
-        Swal.fire({
-          position: "top-end",
-          icon: "success",
-          title: "Login Success",
-          showConfirmButton: false,
-          timer: 1500
-        });
-        navigate('/dashboard');
-      })
-      .catch(err => {
-        console.log(err.message);
-    })
+    const payload = { email, password };
+    localStorage.setItem('portfolio-admin', JSON.stringify(payload));
+    navigate('/dashboard');
+
+    // loginUser(email, password)
+    //   .then(res => {
+    //     Swal.fire({
+    //       position: "top-end",
+    //       icon: "success",
+    //       title: "Login Success",
+    //       showConfirmButton: false,
+    //       timer: 1500
+    //     });
+    //     navigate('/dashboard');
+    //   })
+    //   .catch(err => {
+    //     console.log(err.message);
+    //   })
   };
 
   return (

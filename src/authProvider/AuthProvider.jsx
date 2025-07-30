@@ -26,6 +26,7 @@ const AuthProvider = ({ children }) => {
   // Logout
   const logOut = () => {
     setLoading(true);
+    localStorage.removeItem('portfolio-admin');
     return signOut(auth);
   }
 
